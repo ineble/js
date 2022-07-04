@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        border: 1px solid rgb(75, 180, 180);
+        width: 98%;
+        height: 70px;
+        margin: 10px;
+        background-color: rgb(208, 219, 219);
+    }
+    #logo {
+        float: left;
+        width: 224px;
+        height: 47px;
+        background-image: url('캡처123.PNG');
+        border: 2px solid rgb(170, 170, 170);
+
+    }
+    #top {
+        float: right;
+    }
+    ul {
+        float: right;
+        margin: 22px 50px;
+        background-color: white;
+        padding: 4px;
+        list-style: none;
+        font-size: 0.6em;
+        border: 2px solid rgb(170, 170, 170);
+    }
+    #top ul li {
+        display: inline;
+        padding-right: 10px;
+        list-style: none;
+        
+    }
+    #top ul li:nth-child(1),li:nth-child(2),li:nth-child(3) {
+        border-right: 1px solid gray;
+    }
+    #top ul li a {
+        text-decoration: none;
+    }
+    li:hover a{
+        color: red;
+        
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+</style>
+</head>
+<body>
+    <header>
+        <p>상단 헤더</p>
+        <div id="logo">           
+        </div>
+        
+        <div id="top">
+            <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">사이트 맵</a></li>
+                <li><a href="">회사소개</a></li>
+            </ul>
+        </div>
+    </header>    
+</body>
+</html>
