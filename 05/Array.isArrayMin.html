@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+        function min(first,...rests){
+            let output
+            let items
+
+            if(Array.isArray(first)){ //배열이면 실행
+                output=first[0] //output에 0번째 인덱스
+                items=first //items first 배열 대입
+            }else if(typeof(first) === 'number'){
+                output = first //output 엣 숫자대입
+                items = rests // items에 나머지 숫자 대입
+            }
+            for(const item of items){
+                if(output > item){
+                    output = item
+                }
+            }
+            return output
+
+        }
+        console.log(`min(배열):${min([52,273,32,103,275,24,57])}`)
+        console.log(`min(숫자,...):${min(52,273,32,103,275,24,57)}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>l

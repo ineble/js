@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function earnings(name,wage=8590,hours=40){
+            console.log(`#${name} 님의 급여 정보`)
+            console.log(`-시급 : ${wage}원`)
+            console.log(`-근무시간 : ${hours}시간`)
+            console.log(`-급여: ${wage * hours}원`)
+            console.log("")
+            //가변적 매개변수는 기본적으로 디폴트값을 미리 정해놓을 수 있다.
+            //자바는 이러한 과정을 필드로 한 후 생성자를 불러오는 식으로 사용하였지만
+            //js는 이런한 과정을 매개변수 안에서 처리할 수 있다.
+            //name에 미리 디폴트 값을 지정하지 않은 이유는 name에 값을 넣지 않아도 undefiend로 사용 될 수 있기 떄문이다.
+        }
+        
+        earnings()
+        earnings('구름')
+        earnings('별',10000)
+        earnings('인성',10000,52)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

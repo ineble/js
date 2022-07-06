@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        const max = function(first,...rest){
+            let output
+            let items
+            if(Array.isArray(first)){
+                output = first[0]
+                for(const value of first){
+                    if(output < value){
+                        output = value
+                    }
+                }
+                return output
+            }else if(typeof(first) === 'number'){
+                output = first
+                items = rest
+                for(const value of rest){
+                    if(output < value){
+                        output = value
+                    }
+                }
+                return output
+            }else{
+                console.log("유감이지만 다시하세요")
+            }
+        }
+        console.log(max(1,2,3,4))
+        console.log(max([1,2,3,4]))
+
+    </script>
+
+</head>
+    
+</body>
+</html>

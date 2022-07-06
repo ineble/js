@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        //callback 함수 파라미터로 함수를 전달받아 함수의 내부에서 실행하는 함수
+        function callThreeTimes(callback){
+            for(let i = 0; i <3; i ++){
+                callback(i)
+            }
+        }
+        function print (i){
+            console.log(`${i}번재 함수 호출`)
+        }
+        callThreeTimes(print) //여기서는 print함수를 callback이 호출하여서 파라미터로 넘겨주었다.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

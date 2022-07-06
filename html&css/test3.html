@@ -9,36 +9,37 @@
         footer{
             background-color: cadetblue;
             border : 3px solid seagreen;
-
-        }
-        .sub-title{
+            width:1000px;
+            display: flex;
             
-            border-top : dotted grey 1px;
-            margin: 10px 0px 10px 100px;
-            width:90%;
+        }
+        .footer_box{   
+            border-top : solid grey 1px;
+            margin: 10px 0px 10px 0px;
             background-color: white;
-            position: relative;
             height : 100px;
+            width:800px;
+            display: flex;
             
         }
         #address{
-            width : 60%;
-            display: inline-block;
+            flex : 1;
+            width : 300px;
+            display: flex;
             font-size : 10px;
             
-            margin-top: 20px;
-            margin-left: 50px;
+            justify-content: center;
+            align-items: center;;
         }
         #customer{
-            width : 30%;
+            flex : 1;
+            width : 400px;
             display: inline-block;
             color : cadetblue;
             font-size: 18px;
-            position: absolute;
-            right : 30px;
-            top : 20px;
-            
             text-align: end;
+            margin-right : 50px;
+            margin-top : 20px;
         }
         #customer img{
             display: block;
@@ -47,8 +48,8 @@
     </style>
 </head>
 <body>
-    <footer>
-        <div class="sub-title">
+    <footer>하단푸터
+        <div class="footer_box">
             <div id="address">
             루베토 손해보험(주)|대표이사:홍길동|사업자등록번호:123-12-12354 <br>
             전화:02-123-123|서울시 강남구 가나타통 123번지 <br><br>

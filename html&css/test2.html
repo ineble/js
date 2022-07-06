@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            padding : 0;
-            margin : 0;
+        *{
+            margin: 0px;
+            padding: 0px;
         }
         header{
             display: flex;
-            border : 1px solid green;
-            background-color: cadetblue;
+            border : 1px solid cornflowerblue;
+            background-color: aqua;
             margin : 5px;
+            width : 1000px;
         }
         #logo{
             display: flex;
-            width : 330px;
+            
             float:left;
-            border : 1px solid black;
-            background:  white;
-            margin : 10px;
-            height: 58px;
-            border-spacing: 0px;
-        }
-        #logo p {
-            font-size: 16px;
-        }
-        #logo img{
+            
+            margin : 20px;
             height: 40px;
-            
-            margin : 0;
+            flex: 1;
             
         }
-        .blank{
-            display: flx;
-            width: 50%;
-            border : 1px sild black;
+        #logo_box{
+            width : 250px;
+            border : 1px solid gainsboro;
+            background:  white;
+            position: relative;
+        }
+        #logo_box p {
+            font-size: 10px;
+            display: flex;
+            top : 7px;
+            left : 90px;
+            flex : 3;
+            position: absolute;
+            color : gainsboro;
+            
+        }
+        #logo_box img{
+            height: 40px;
+            display: flex;
+            flex : 1;
+            margin : 0;
+            position: absolute;
+        }
+        #uheader{
+            display: flex;
+            
+            flex : 1;   
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
         }
         #top{
             display: flex;
             flex : 1;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
-            
+            margin-right : 20px;
         }
        
         
-        ul{
+        #top ul{
             border : 1px solid black;
             float:right;
             background-color: white;
             
         }
-        li{
+        #top ul li{
             list-style: none;
-            display: inline-block;
+            float: left;
+            margin : 1.5px 0px;
             
         }
         #top ul li a{
             text-decoration: none;
             color : black;
+            font-size : 13px;
             
         }
-        #top ul li a:hover{
+        #top ul li:nth-child(1),li:nth-child(2),li:nth-child(3){
+            border-right: solid black 1px;
+            
+        }
+        #top ul li:hover a{
             color:red;
         }
+        
     </style>
 </head>
 <body>
     <header>
         <div id="logo">
-            <p><img src="rudito.PNG" alt="#">
-            신뢰로 보답하는루비토손해보험</p>
+            <div id="logo_box">
+            <img src="rudito.PNG" alt="#">
+            <p>신뢰로 보답하는루비토손해보험</p>
+            </div>
         </div>
-        <div class="blank"></div>
+        <div id="uheader">
+            상단 헤더
+        </div>
         <div id="top">
+           
             <ul>
-                <li><a href="#">로그인 |</a></li>
-                <li><a href="#"> 회원가입 |</a></li>
-                <li><a href="#" >사이트 맵 |</a></li>
-                <li><a href="#"> 회사소개</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">사이트 맵</a></li>
+                <li><a href="#">회사소개</a></li>
             </ul>
         </div>
     </header>    
