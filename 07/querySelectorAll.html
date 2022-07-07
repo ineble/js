@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+       document.addEventListener('DOMContentLoaded',()=>{
+        const headers = document.querySelectorAll('h1')
+        headers.forEach((header) => {
+        header.textContent='HEADERS'
+        header.style.color='blue'
+        header.style.backgroundColor='red'
+        header.style.width=`200px`
+        header.style.height=`200px`
+        header.style.borderRadius='50%'
+        header.style.display='flex'
+        header.style.alignItems='center'
+        header.style.justifyContent='center'
+        })
+       })
+        
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>

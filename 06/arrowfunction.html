@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        const test = {
+            name: "구름",
+            method: "밥을 먹",
+            age: "5",
+            kind: "포메라니안",
+            a:function (){    
+            console.log(this.name + "이는 " + this.kind + "이며," + this.age + "살이예요!")
+            console.log(this.name + "이는 " + this.method + "고 있어요!")
+            },
+            b:()=>{
+                console.log(this.name + "이는 " + this.kind + "이며," + this.age + "살이예요!")
+                console.log(this.name + "이는 " + this.method + "고 있어요!")
+            }
+        }
+        test.a()
+        test.b()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
