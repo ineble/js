@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            const star = document.querySelector('img')
+            star.style.position='absolute'
+        
+        let[x,y] = [0,0]
+        const block = 20
+        const size = 10
+        const print = () => {
+            star.style.left = `${x*block}px`
+            star.style.top = `${y*block}px`
+            star.style.width = `${(x+1)*size}px`
+            star.style.height = `${(y+1)*size}px`
+        }
+        print()
+
+        const [left,up,right,down] = [37,38,39,40]
+        document.body.addEventListener('keydown',(event)=>{
+            switch(event.keyCode){
+                case left:
+                    x-=1
+                    break
+                case right:
+                    x+=1
+                    break    
+                case up:
+                    y-=1
+                    break
+                case down:
+                    y+=1
+                    break
+
+            }
+            print()
+        })
+    })
+    </script>
+</head>
+<body>
+    <img src="캡처1.PNG">
+</body>
+</html>

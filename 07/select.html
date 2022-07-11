@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            let 현재값 //현재값 
+            let 변환상수 = 10 //변환상수
+
+            const select = document.querySelector('select')
+            const input = document.querySelector('input')
+            const span = document.querySelector('span')
+
+            const calculate = () => {
+                span.textContent = (현재값*변환상수).toFixed(2)
+            }
+            // calculate -> span에 현재값*변환상수를 소수점 2개자리로 추가해라
+            select.addEventListener('change',(event)=>{
+                // change 즉, 변할때 event -> 익명함수 콜백을 매개변수로 호출해라
+                const options = event.currentTarget.options
+                // 지금 하는 이벤트의 현재 타켓의 옵션들을 변수 options에 넣어라
+                const index = event.currentTarget.options.selectedIndex
+                // 지금 하는 이벤트의 현재 타겟의 옵션들의 선정된 인덱스를 인덱스에 넣어라
+                변환상수 = Number(options[index].value)
+                // 인덱스의 벨류 값을 숫자화시켜서 변환상수에 널어라
+
+                calculate()
+                // 계산 때려라
+            })
+                input.addEventListener('keyup',(event)=>{ //event 익명함수의 호출
+                    현재값 = Number(event.currentTarget.value)
+                    calculate()
+                // 키보드에서 손 땔때 현재 타켓의 값을 숫자화시키려ㅏ
+                // 계산 때려라
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text"> cm = 
+    <span></span>
+    <select >
+        <option value="10">mm</option>
+        <option value="0.01">m</option>
+        <option value="0.393701">inch</option>
+    </select>
+</body>
+</html>

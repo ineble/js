@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            let status = false
+
+            const checkbox = document.querySelector('input')
+            checkbox.addEventListener('change',(event)=>{
+                status = event.currentTarget.checked
+                // checkbox는 true와 false만 사용 가능
+                // 선택이 되어있으면 true 없으면 false를 반환
+                
+            })
+            const link = document.querySelector('a')
+            link.addEventListener('click',(event)=>{
+                if(!status){
+                    // status가 true이면 false가 되고 false면 true가 됨
+                    //status가 false의 반전 즉 true면 기본 제공을 무효화
+                    event.preventDefault()
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="checkbox">
+    <span>링크 활성화</span>
+    <br>
+    <a href="https://www.naver.com/">한빛미디어</a>
+</body>
+</html>

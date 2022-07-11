@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function test(){
+        try{
+            alert('A 위치입니다.')
+            throw "예외 강제 발생" //예외 만들기
+        }catch(exception){
+            alert('B 위치입니다.')
+        
+            return
+        }finally{
+            alert('c위치입니다.')
+            // 마지막 문구 안뜸 -> why? finally아니니깐
+         }
+        }   
+    test()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

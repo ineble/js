@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            const input1 = document.querySelector('.text1')
+            const input2 = document.querySelector('.text2')
+            const button1 = document.querySelector('.button1')
+            const button2 = document.querySelector('.button2')
+            const inch = document.querySelector('.inch')
+            const cm = document.querySelector('.cm')
+            const p1 = document.querySelector('.p1')
+            const p2 = document.querySelector('.p2')
+
+
+        cm.addEventListener('click',(event)=>{
+            button1.addEventListener('click',(event)=>{
+            
+            const inch = Number(input1.value)
+            if(isNaN(inch)){
+                p1.textContent='숫자를 입력해주세요'
+                return
+            }
+            const cm = inch * 2.54
+            p1.textContent = `${cm} cm`    
+            })
+        })
+        inch.addEventListener('click',(event)=>{
+            button2.addEventListener('click',(event)=>{
+            
+            const cm1 = Number(input2.value)
+            if(isNaN(cm1)){
+                p2.textContent='숫자를 입력해주세요'
+                return
+            }
+            const inch1 = cm1 / 2.54
+            p2.textContent = `${inch1} inch`
+            })
+        })
+    })
+    </script>
+</head>
+<body>
+    <button class="inch">inch</button><button class="cm">cm</button>
+    <hr>
+    <input type="text" class="text1" class="text2"> inch<br>   
+    <button class="button1" class="button2">계산</button>
+    <p class="p1" class="p2"></p>
+    <!-- <hr>
+    <input type="text" class="text2"> cm<br>
+    <button class="button2">계산</button>
+    <p class="p2"></p> -->
+    
+</body>
+</html>
