@@ -21,6 +21,7 @@ a:link, a:visited, a:hover, a:active{
 }
 header{
     height: 128px;
+    background-color: rgba(228, 228, 228, 0);
 }
 header #top{
     width: 990px;
@@ -36,6 +37,9 @@ header #search{
     font-size:12px;
     color:#96c11f;
     margin: 40px 0 0 150px;
+    width: 200px;
+    height : 60px;
+    
 }
 header #search #search_title{
     float: left;
@@ -138,7 +142,7 @@ section#cat1{
 }
 section#cat1 #cat_title{
     padding : 12px;
-    background-color: #95c11f;
+    background-color: #96c11f;
     color: #fff;
     text-align: center;
 }
@@ -160,7 +164,7 @@ section#cat3{
 section#cat3 #latest_notice{
     width: 239px;
     height: 161px;
-    background-image: none;
+    background-image: url("");
     background-repeat: no-repeat;
 }
 
