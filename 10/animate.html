@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function(){
+        $('button.b1').click(function(){
+            $('img').animate({
+                width: '100px'
+            });
+            
+        });
+        $('button.b2').click(function(){
+            $('img').animate({
+                width: '200px'
+            });
+        });
+        $('button.b3').click(function(){
+            $('img').animate({
+                width: '300px'
+            });
+        });
+        $('button.b4').click(function(){
+            $('img').animate({
+                width: '100px'
+            });
+            $('img').animate({
+                width: '900px'
+            });
+            $('img').animate({
+                width: '200px'
+            });
+            $('img').animate({
+                width: '800px'
+            });
+            $('img').animate({
+                width: '300px'
+            });
+            $('img').animate({
+                width: '700px'
+            });
+            $('img').animate({
+                width: '400px'
+            });
+            $('img').animate({
+                width: '600px'
+            });
+            $('img').animate({
+                width: '500px'
+            });
+        
+            
+        });
+
+    });
+    </script>
+    <style>
+        .css_pic{
+            height: 430px;
+            text-align: center;
+        }
+        .css_pic img{
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="css_pic">
+        <p>버튼을 누르면 그림의 크기가 바뀝니다.</p>
+        <button class="b1">가로 100픽셀</button>
+        <button class="b2">가로 200픽셀</button>
+        <button class="b3">가로 300픽셀</button>
+        <button class="b4">그라데이션</button>
+        
+        <br><br>
+        <img src="pixel-3316924_640.png" name="pic1"></div>
+</body>
+</html>

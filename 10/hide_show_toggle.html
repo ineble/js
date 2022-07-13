@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('img').hide(1500);
+            });
+            $('#show').click(function(){
+                $('img').show(1500);
+            });
+            $('#toggle').click(function(){
+                $('img').toggle(1500)
+            });
+            
+        });
+    </script>
+    
+</head>
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <p></p>
+    <img name="pic1" src="불편.PNG" />
+    
+</body>
+</html>
