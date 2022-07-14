@@ -1,4 +1,3 @@
-/* 헤더 시작 */
 *{
     margin:0;
     padding:0;
@@ -7,7 +6,7 @@ body{
     font-family: "맑은 고딕","돋음";
     font-size:12px;
     color : #444;
-    background-color: #f2f0f0;
+    background-color: white;
 }
 ul{
     list-style: none;
@@ -34,8 +33,8 @@ header #logo{
 header #search{
     float:left;
     font-family: "Sans-serif";
-    font-size:12px;
-    color:#96c11f;
+    font-size:14px;
+    color: rgb(139, 176, 189);
     margin: 40px 0 0 150px;
     width: 200px;
     height : 60px;
@@ -43,10 +42,11 @@ header #search{
 }
 header #search #search_title{
     float: left;
-    margin-top:6px;
+    margin-top:-2px;
 }
 header #search #search_form{
     float: left;
+
 }
 
 header #search #search_form input{
@@ -103,8 +103,8 @@ header #top_menu li{
 }
 header #main_menu {
     height: 38px;
-    margin-top: 15px;
-    background-color: #4e4c4d;
+    margin-top: 5px;
+    background-color: #92c8e0;
 }
 header #main_menu ul{
     width: 990px;
@@ -114,8 +114,16 @@ header #main_menu ul{
 }
 header #main_menu li{
     display: inline;
-    margin: 0 57px;
+    margin: 0 40px;
+    
+    padding : 10px;
 }
+
+
+header #main_menu li:hover a{
+    color: rgb(139, 176, 189);
+}
+
 header #main_menu a:link{
     color: #fff
 }
@@ -123,7 +131,7 @@ header #main_menu a:visited{
     color: #fff
 }
 header #main_menu a:hover{
-    color: #fff
+    color: rgb(139, 176, 189);
 }
 header #main_menu a:active{
     color: #fff
@@ -133,6 +141,7 @@ header #main_menu a:active{
 section#main{
     width: 990px;
     margin: auto;
+    height:900px;
 }
 section#cat1{
     width: 215px;
@@ -142,7 +151,7 @@ section#cat1{
 }
 section#cat1 #cat_title{
     padding : 12px;
-    background-color: #96c11f;
+    background-color: #ceeaf7;
     color: #fff;
     text-align: center;
 }
@@ -150,39 +159,79 @@ section#cat1 li{
     color : #666;
     padding : 7px 0 7px 30px;
     border-bottom: solid 1px #ccc;
+    
+}
+section#cat1 ul li:nth-child(1):hover a{
+    color : rgba(243, 16, 16, 0.541);
+}
+section#cat1 ul li:nth-child(2):hover a{
+    color : rgba(255, 166, 0, 0.521);
+}
+section#cat1 ul li:nth-child(3):hover a{
+    color : rgba(255, 255, 0, 0.671);
+}
+section#cat1 ul li:nth-child(4):hover a{
+    color : rgba(0, 128, 0, 0.527);
+}
+section#cat1 ul li:nth-child(5):hover a{
+    color : rgba(80, 80, 233, 0.712);
+}
+section#cat1 ul li:nth-child(6):hover a{
+    color : rgba(0, 0, 128, 0.582);
+}
+section#cat1 ul li:nth-child(7):hover a{
+    color : rgba(235, 103, 235, 0.603);
+}
+section#cat1 ul li:nth-child(8):hover a{
+    color : rgba(228, 93, 187, 0.877);
+}
+section#cat1 ul li:nth-child(9):hover a{
+    color : rgba(238, 66, 118, 0.705);
+}
+section#cat1 ul li:nth-child(10):hover a{
+    color : rgb(233, 88, 107);
+}
+section#cat1 ul li:nth-child(11):hover a{
+    color : rgba(226, 42, 57, 0.795);
 }
 
 section#cat2{
     float:left;
-    margin-top: 15px;
+    margin-top: 30px;
+    height:398px;
+    width:592px;
+    margin-left : 15px;
 }
 section#cat3{
-    width:236px;
+    width:200px;
     float:left;
     margin-top: 15px;
+    margin-left:10px;
 }
 section#cat3 #latest_notice{
     width: 239px;
-    height: 161px;
-    background-image: url("");
+    height: 182px;
+    background-image: url("border2.PNG");
     background-repeat: no-repeat;
+    
 }
 
 section#cat3 #latest_notice ul{
     padding : 42px 0 0 30px;
-    list-style-image: none;
+    list-style-type: circle;
 }
 section#cat3 #week_event{
     width: 239px;
-    height: 191px;
-    margin-top: 11px;
-    background-image: none;
+    height: 187px;
+    margin-top: 19px;
+    margin-left : 2px;
+    background-image: url("border7.PNG");
     background-repeat: no-repeat;
 
 }
 
 section#cat3 #week_event img{
-    margin:58px 0 0 22px;
+    margin:75px 0 0 22px;
 }
 /* 섹션 끝 */
 /* 섹션 배너 */
@@ -191,8 +240,10 @@ section#special_shop{
     height:389px;
     margin-top:20px;
     float:left;
-    background-image: url("images/background.JPG");
+    background-image: url("border1212.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 section#special_shop ul{
@@ -215,35 +266,37 @@ section#special_banner{
 }
 section#special_banner div{
     width:392px;
-    height: 129px;
+    height: 387px;
     margin-top:1px;
 }
 section#special_banner #banner1{
-    background-image: url("images/background.JPG");
+    background-image: url("7조_2.jpg");
     background-repeat: no-repeat;
-}
-section#special_banner #banner2{
-    background-image: url("images/background.JPG");
-    background-repeat: no-repeat;
-}
-section#special_banner #banner3{
-    background-image: url("images/background.JPG");
-    background-repeat: no-repeat;
+    background-size: 392px 387px;
+    margin-top: 10px;
+    
 }
 
 section#special_banner ul{
-    padding:6px 0 0  132px;
+    padding:6px 0 33px 132px;
 }
 
 section#special_banner li{
     display: inline;
+    
 }
 /* 배너 끝 */
 /* 신규상품 시작 */
+
 section#new{
-    height: 650px;
+    width: 990px;
+    margin: auto;
     margin-top: 20px;
-    border-top: 2px solid #9bc32a;
+    border: 1px solid black;
+    height:300px;
+    overflow: scroll;
+    
+    
 }
 section#new h3{
     margin: 20px 0 0 35px;
@@ -256,27 +309,37 @@ section#new .item{
     text-align: center;
     margin: 20px 0 0 32px;
 }
+
+section#new .item ul li:hover img{
+    opacity: 0.8;
+    transform: scale(1.2);
+    cursor: pointer;
+}
 section#new .item .subject{
     margin-top: 10px;
-    color:#80a727;
+    color: rgb(139, 176, 189);
+    
 }
 section#new .item .comment{
     margin-top: 5px;
     color: #888888;
+    
 }
 section#new .item .price{
     margin-top: 5px;
     font-weight: bold;
+    
 }
 /* 신규상품 끝 */
 /* 푸터시작 */
 footer{
     height: 200px;
     margin-top: 20px;
+    background-color: rgba(223, 220, 220, 0.42);
 }
 footer #footer_menu_box{
     height: 40px;
-    background-color: #4e4c4d;
+    background-color: #92c8e0;
 }
 footer #footer_menu{
     width: 990px;
@@ -290,6 +353,14 @@ footer #footer_menu li{
     display: inline;
     margin-left: 20px;
 }
+
+footer #footer_menu li:hover a{
+    margin-left: 20px;
+    color: rgb(139, 176, 189);
+}
+
+
+
 footer #footer_menu a:link{
     color:#ffffff
 }
@@ -304,19 +375,22 @@ footer #footer_menu a:active{
 }
 footer #footer_box{
     width:990px;
-    margin:auto;
+    height : 100px;
+    margin:20px auto;
+    box-sizing: border-box;
+    
 }
 footer #footer_box div{
     float:left;
 }
 footer #footer_box #footer_logo{
-    margin: 50px 0 0 30px;
+    margin: 20px 0 0 30px;
+    
+    
 }
 footer #footer_box #address{
-    margin:25px 0 0 10px;
+    margin:10px 0 0 10px;
 }
 footer #footer_box #footer_banner{
-    margin:50px 0 0 70px;
+    margin:10px 0 0 20px;
 }
-
-/* 푸터끝 */

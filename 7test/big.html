@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function(){
+        $('button.b1').click(function(){
+            $('img').animate({
+                width: '200px'
+            });
+            
+        });
+        $('button.b2').click(function(){
+            $('img').animate({
+                width: '650px'
+            });
+        });
+       
+       
+
+    });
+    </script>
+    <style>
+        .css_pic{
+            height: 430px;
+            text-align: center;
+        }
+        .css_pic img{
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="css_pic">
+        <p>버튼을 누르면 그림의 크기가 바뀝니다.</p>
+        
+        <button class="b1">축소</button>
+        <button class="b2">확대</button>
+        <br><br>
+        <a href="detail-page.html"><img src="item1.jpg" name="pic1"></a>
+        <a href="detail-page.html"><img src="a1.png" name="pic1"></a>
+        <a href="detail-page.html"><img src="a2.png" name="pic1"></a>
+        <a href="detail-page.html"><img src="a3.png" name="pic1"></a>
+        <a href="detail-page.html"><img src="a4.png" name="pic1"></a>
+        <a href="detail-page.html"><img src="a5.png" name="pic1"></a>
+    </div>
+</body>
+</html>
